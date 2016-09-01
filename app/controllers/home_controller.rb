@@ -3,7 +3,7 @@ class HomeController < ApplicationController
     @contact = Contact.new
   end
 
-  def submit
+  def create
     @contact = Contact.new(params[:contact])
     @contact.request = request
     if @contact.deliver
@@ -12,6 +12,7 @@ class HomeController < ApplicationController
       flash.now[:error] = "Cannot send message"
       render :index
     end
+    render :index
   end
 
   private
