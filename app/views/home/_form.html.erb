@@ -1,0 +1,30 @@
+<%= form_for @contact, url: home_index_path do |f| %>
+
+  <div class="col-md-6">
+    <div class="form-group">
+      <label for="InputName">Your Name</label>
+      <div class="input-group">
+        <%= f.text_field :name, required: true, class: 'form-control', id: 'InputName', placeholder: "Enter Name" %>
+        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="InputEmail">Your Email</label>
+      <div class="input-group">
+        <%= f.email_field :email, required: true, class: "form-control", id: "InputEmail", placeholder: "Enter Email"  %>
+        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="InputMessage">Message</label>
+      <div class="input-group">
+        <%= f.text_area :message, as: :text, id: "InputMessage", class: 'form-control', rows: '5' %>
+        <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+      </div>
+    </div>
+
+    <%= f.submit 'Submit', name: 'sumbit', id: 'submit', class: 'btn wow tada btn-embossed btn-primary pull-right'%>
+  </div>
+<% end %>
