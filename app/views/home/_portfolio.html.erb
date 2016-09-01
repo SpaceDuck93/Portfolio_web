@@ -9,36 +9,16 @@
         <div class="row">
           <div class="col-sm-6 wow fadeInLeftBig">
             <div id="owl-demo-1" class="owl-carousel">
-              <a href="#" class="image-link">
-                <div class="item">
-                  <!-- <img  class="img-responsive img-rounded" src="../assets/images/second_website.jpg" alt=""> -->
+                <%= link_to image_tag("second.jpg", style: "display: hidden;"),  image_path('second.jpg'), class: "image-link" %>
 
-                </div>
-              </a>
-              <a href="#" class="image-link">
-                <div class="item">
-                  <!-- <img  class="img-responsive img-rounded" src="../assets/images/spaceduck.jpg" alt=""> -->
+                <%= link_to image_tag("duck.jpg"),  image_path('duck.jpg'), class: "image-link" %>
 
-                </div>
-              </a>
-              <a href="#" class="image-link">
-                <div class="item">
-                  <!-- <img  class="img-responsive img-rounded" src="../assets/images/dash.jpg" alt=""> -->
-                  <%= image_tag("dash.jpg", class:"img-responsive img-rounded") %>
-                </div>
-              </a>
-              <a href="#" class="image-link">
-                <div class="item">
-                  <!-- <img  class="img-responsive img-rounded" src="../assets/images/board.jpg" alt=""> -->
-                  <%= image_tag("board.jpg", class:"img-responsive img-rounded") %>
-                </div>
-              </a>
-              <a href="#" class="image-link">
-                <div class="item">
-                  <!-- <img  class="img-responsive img-rounded" src="../assets/images/dashboard.jpg" alt=""> -->
-                  <%= image_tag("dashboard.jpg", class:"img-responsive img-rounded") %>
-                </div>
-              </a>
+                <%= link_to image_tag("dash.jpg"),  image_path('dash.jpg'), class: "image-link" %>
+
+                <%= link_to image_tag("board.jpg"),  image_path('board.jpg'), class: "image-link" %>
+
+                <%= link_to image_tag("dashboard.jpg"),  image_path('dashboard.jpg'), class: "image-link" %>
+
             </div>
           </div>
 
