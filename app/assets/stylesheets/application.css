@@ -12,4 +12,14 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
+ *= require clever/custom.css
+ *= require clever/general.css
+ *= require clever/animate.css
+ *= require clever/bootstrap.css
+ *= require clever/bootstrapTheme.css
+ *= require clever/magnific-popup.css
+ *= require clever/owl.carousel.css
+ *= require clever/owl.theme.css
+ *= require clever/style.css
  */

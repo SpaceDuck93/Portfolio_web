@@ -13,4 +13,18 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require clever/bootstrap.js
+//= require clever/classie.js
+
+//= require clever/html5shiv.js
+//= require clever/jquery-1.9.1.min.js
+//= require clever/modernizr-2.8.3.min.js
+//= require clever/jquery-1.10.2.js
+//= require clever/owl.carousel.js
+//= require clever/script.js
+//= require clever/stickUp.min.js
+//= require clever/jquery.corner.js
+//= require clever/wow.min.js
+//= require clever/jquery.magnific-popup.js
+
 //= require_tree .
