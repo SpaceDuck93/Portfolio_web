@@ -7,6 +7,9 @@ class HomeController < ApplicationController
     @contact = Contact.new(params[:contact])
     @contact.request = request
     if @contact.deliver
+      logger.debug "***************************************** lo mando"
+      logger.debug "***************************************** lo mando"
+      logger.debug "***************************************** lo mando"
       flash.now[:error] = nil
     else
       flash.now[:error] = "Cannot send message"
