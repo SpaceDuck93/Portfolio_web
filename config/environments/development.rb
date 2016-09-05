@@ -32,17 +32,17 @@ Rails.application.configure do
   config.action_mailer.perform_caching = true
 
   config.action_mailer.perform_deliveries = true
-
-  config.action_mailer.delivery_method = :sendmail
-  config.action_mailer.smtp_settings = {
-    address:              'localhost',
-    port:                 25,
-    domain:               'alfredodev.com',
-    user_name:            ENV['perezalfredo14'],
-    password:             ENV['Apalvarez1093..'],
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = {
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'mydomain.com',
+    user_name:            '<username>',
+    password:             '<password>',
     authentication:       'plain',
-    enable_starttls_auto: false,
-    openssl_verify_mode: 'none'
+    enable_starttls_auto: true,
+    openssl_verify_mode:  'none'
     }
 
 

@@ -8,9 +8,6 @@ class HomeController < ApplicationController
     @contact.request = request
     if @contact.valid?
       @contact.deliver
-      logger.debug "***************************************** lo mando"
-      logger.debug "***************************************** lo mando"
-      logger.debug "***************************************** lo mando"
       flash.now[:error] = nil
     else
       flash.now[:error] = "Cannot send message"
