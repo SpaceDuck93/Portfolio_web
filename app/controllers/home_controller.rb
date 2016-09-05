@@ -6,7 +6,8 @@ class HomeController < ApplicationController
   def create
     @contact = Contact.new(params[:contact])
     @contact.request = request
-    if @contact.deliver
+    if @contact.valid?
+      @contact.deliver
       logger.debug "***************************************** lo mando"
       logger.debug "***************************************** lo mando"
       logger.debug "***************************************** lo mando"
