@@ -1,0 +1,1 @@
+YourAppNameHere::Application.config.secret_key_base = 'cb4e46fabe7b59a0f118b766f444d7ab2c190b912e36a835f4c3899ad470a96e5b4775caa20558db3c9ee6385bf8848584604c52b3945856d6939b53f1ac4cdd'
