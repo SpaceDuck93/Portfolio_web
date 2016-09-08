@@ -21,6 +21,25 @@
 .byebug_history
 
 # Ignore personal files
-/config/environments/*
-config/database.yml
-config/application.yml
+/.bundle
+/db/*.sqlite3
+/doc/
+*.rbc
+*.sassc
+.sass-cache
+capybara-*.html
+.rspec
+/vendor/bundle
+/log/*
+/tmp/*
+/public/system/*
+/coverage/
+/spec/tmp/*
+**.orig
+rerun.txt
+pickle-email-*.html
+
+/config/environments/production.rb
+/config/environments/development.rb
+/config/*.yml
+/*.log
