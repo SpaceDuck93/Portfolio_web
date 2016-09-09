@@ -92,7 +92,7 @@ Rails.application.configure do
      :authentication       => "plain",
      :enable_starttls_auto => true
     }
-  }
+
   # :address        => 'smtp.sendgrid.net',
   # :port           => '587',
   # :authentication => :plain,
