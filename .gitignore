@@ -19,26 +19,3 @@
 
 # Ignore Byebug command history file.
 .byebug_history
-
-# Ignore personal files
-/.bundle
-/db/*
-/config/environment.rb
-/doc/
-*.rbc
-*.sassc
-.sass-cache
-capybara-*.html
-.rspec
-/vendor/bundle
-/log/*
-/tmp/*
-/public/system/*
-/coverage/
-/spec/tmp/*
-**.orig
-rerun.txt
-pickle-email-*.html
-
-/config/*.yml
-/*.log
